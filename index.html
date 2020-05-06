@@ -6,24 +6,35 @@
             <style>
                 body {
                     font-family: 'Times New Roman', Times, serif;
+                    font-size: 18px;
                     background-color: #90AFC5;
                     text-align: center;
                     }
+                #photo {
+                    border-radius: 25%;
+                }
                 #nome {
                     font-family: "Lucida", sans-serif;
+                    font-size: 1.5em;
                 }
-                .list {
-                    list-style: none;
+                .info{
+                    font-size: 0.9em;
+                    font-weight: 500;
+                }
+                .links {
+                    text-decoration: none;
+                }
+                .linkedin {
+                    border-radius: 50%;
                 }
             </style>        
     </head>
     <body>
         <h1 id="nome">Felipe Vieira</h1>
-        <img src="2020-04-28-foto.jpeg" alt="Looks like Brad Pitt, but thats Felipe Vieira's photo." width="250">
+        <img id="photo" src="2020-04-28-foto.jpeg" alt="Looks like Brad Pitt, but thats Felipe Vieira's photo." width="250">
         <h4>Florianópolis SC Brazil</h4>
-     	<h4 id="social"><a target="_blank" href="https://github.com/FelipeVieira86"><strong>GitHub</a></strong></h4>
-        <h4><a target="_blank" href="https://www.linkedin.com/in/felipe-vieira-5235b11a6/">Linkedin</a></h4>
-
+        <a class="links" href="https://github.com/FelipeVieira86"> <img src="GitHub-Mark-32px.png" width="32px" alt="GitHub Mark">GitHub</a> <br>
+        <a class="links" href="https://www.linkedin.com/in/felipe-vieira-5235b11a6/"> <img class="linkedin" src="iconfinder_linkedin_272550.png" width="32px" alt="Linkedin Mark">Linkedin</a> 
         <h2 id="skills">Soft Skills:</h2>
             <p>Adaptability</p>
             <p>Communitcation</p>
