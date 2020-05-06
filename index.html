@@ -4,14 +4,17 @@
             <meta charset="utf-8">
             <title>My Portfolio</title>   
             <style>
+                * {
+                    color : #2A3132;
+                }
                 body {
                     font-family: 'Times New Roman', Times, serif;
-                    font-size: 18px;
+                    font-size : 18px;
                     background-color: #90AFC5;
-                    text-align: center;
+                    text-align : center;
                     }
                 #photo {
-                    border-radius: 25%;
+                    border-radius: 15%;
                 }
                 #nome {
                     font-family: "Lucida", sans-serif;
@@ -22,32 +25,49 @@
                     font-weight: 500;
                 }
                 .links {
-                    text-decoration: none;
+                    text-decoration: underline;
+                    font-weight: 500;
+                    font-size: 0.9em;
                 }
                 .linkedin {
                     border-radius: 50%;
                 }
+                p {
+                    margin-block-end: 0.2em;
+                    margin-block-start: 0.2em;
+                }
+                .buttons-bot{
+                    background-color: #336B87;
+                    padding: 10px 20px;
+                    border-radius: 20%;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                }
+                .blue-style {
+                    color: #021946;
+                }
             </style>        
     </head>
     <body>
-        <h1 id="nome">Felipe Vieira</h1>
+        <h1 class="blue-style" id="nome">Felipe Vieira</h1>
         <img id="photo" src="2020-04-28-foto.jpeg" alt="Looks like Brad Pitt, but thats Felipe Vieira's photo." width="250">
-        <h4>Florianópolis SC Brazil</h4>
+        <h4 class="blue-style">Florianópolis SC Brazil</h4>
         <a class="links" href="https://github.com/FelipeVieira86"> <img src="GitHub-Mark-32px.png" width="32px" alt="GitHub Mark">GitHub</a> <br>
         <a class="links" href="https://www.linkedin.com/in/felipe-vieira-5235b11a6/"> <img class="linkedin" src="iconfinder_linkedin_272550.png" width="32px" alt="Linkedin Mark">Linkedin</a> 
-        <h2 id="skills">Soft Skills:</h2>
+        <h2 class="blue-style" id="skills">Soft Skills:</h2>
             <p>Adaptability</p>
             <p>Communitcation</p>
             <p>Critical Thinking</p>
             <p><em>Teamwork</em></p>
             <p><em>Problem Solving</em></p>
-        <h2>Hard Skills</h2>
+        <h2 class="blue-style">Hard Skills</h2>
             <p>CAD</p>
             <p>Design</p>
             <p>Troubleshooting</p>
-            <p>Workflow Development</p>
-        <a href="#nome">Top</a>
-        <a href="#skills">Skills</a>
-        <a href="#social">Links</a>
+            <p>Workflow Development</p><br>
+        <a class="buttons-bot" href="#nome">Top</a>
+        <a class="buttons-bot" href="#skills">Skills</a>
+        <a class="buttons-bot" href="#social">Links</a>
     </body>
 </html>
