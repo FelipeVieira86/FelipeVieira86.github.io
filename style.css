@@ -1,0 +1,53 @@
+<style>
+    @font-face {
+        font-family: 'kotori_roseregular';
+        src: url('/Fonts/kotorirose-regular-webfont.woff2') format('woff2'),
+        url('/Fonts/kotorirose-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+                * {
+                    color : #026670;
+                    font-family: 'kotori_roseregular';
+                  }
+                body {
+                    font-size : 18px;
+                    background-color: #EDEAE5;
+                    text-align : center;
+                    }
+                #photo {
+                    border-radius: 15%;
+                }
+                #nome {
+                    font-size: 2.5em;
+                }
+                .info{
+                    font-size: 0.9em;
+                    font-weight: 500;
+                }
+                .links {
+                    text-decoration: underline;
+                    font-weight: 500;
+                    font-size: 0.9em;
+                }
+                .linkedin {
+                    border-radius: 50%;
+                }
+                p {
+                    margin-block-end: 0.2em;
+                    margin-block-start: 0.2em;
+                }
+                .buttons-bot{
+                    background-color: #EDEAE5;
+                    padding: 10px 20px;
+                    border: 2px solid;
+                    border-radius: 20%;
+                    color: #026670;
+                    border-color: #021946; 
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+                .blue-style {
+                    color: #021946;
+                }
+            </style> 
