@@ -3,66 +3,31 @@
     <head>
             <meta charset="utf-8">
             <title>My Portfolio</title>   
+            <link rel="stylesheet" type="text/css" href="style.css">      
             <style>
-    @font-face {
-        font-family: 'kotori_roseregular';
-        src: url('kotorirose-regular-webfont.woff2') format('woff2'),
-        url('kotorirose-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-                * {
-                    color : #026670;
-                    font-family: 'kotori_roseregular';
-                  }
-                body {
-                    font-size : 18px;
-                    background-color: #EDEAE5;
-                    text-align : center;
-                    }
-                #photo {
-                    border-radius: 15%;
-                }
-                #nome {
-                    font-size: 2.5em;
-                }
-                .info{
-                    font-size: 0.9em;
-                    font-weight: 500;
-                }
-                .links {
-                    text-decoration: underline;
-                    font-weight: 500;
-                    font-size: 0.9em;
-                }
-                .linkedin {
-                    border-radius: 50%;
-                }
-                p {
-                    margin-block-end: 0.2em;
-                    margin-block-start: 0.2em;
-                }
-                .buttons-bot{
-                    background-color: #EDEAE5;
-                    padding: 10px 20px;
-                    border: 2px solid;
-                    border-radius: 20%;
-                    color: #026670;
-                    border-color: #021946; 
-                    font-weight: bold;
-                    text-decoration: none;
-                }
-                .blue-style {
-                    color: #021946;
-                }
-            </style>        
+            @font-face {
+                font-family: 'kotori_roseregular';
+                src: url('/Fonts/kotorirose-regular-webfont.woff2') format('woff2'),
+                url('/Fonts/kotorirose-regular-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            </style>
     </head>
     <body>
-        <h1 class="blue-style" id="nome">Felipe Vieira</h1>
-        <img id="photo" src="2020-04-28-foto.jpeg" alt="Looks like Brad Pitt, but thats Felipe Vieira's photo." width="250">
-        <h4 class="blue-style">Florianopolis SC Brazil</h4>
-        <a class="links" href="https://github.com/FelipeVieira86"> <img class="github" src="GitHub-Mark-32px.png" width="32px" alt="GitHub Mark">GitHub</a> <br>
-        <a class="links" href="https://www.linkedin.com/in/felipe-vieira-5235b11a6/"> <img class="linkedin" src="linkedin-Mark.png" width="32px" alt="Linkedin Mark">Linkedin</a> 
+        <div>
+            <h1 class="blue-style" id="nome">Felipe Vieira</h1>
+        </div>
+        <div>
+            <img id="photo" src="/Images/2020-04-28-foto.jpeg" alt="Looks like Brad Pitt, but thats Felipe Vieira's photo." width="250">
+        </div>
+        <div>
+            <h4 id="info" class="blue-style">Florianopolis SC Brazil</h4>
+        </div>
+        <div class="clear">
+            <a class="links" href="https://github.com/FelipeVieira86"> <img class="github" src="Images/GitHub-Mark-32px.png" width="32px" alt="GitHub Mark"><span class="linktext">GitHub</span></a> <br>
+            <a class="links" href="https://www.linkedin.com/in/felipe-vieira-5235b11a6/"> <img class="linkedin" src="Images/linkedin-Mark.png" width="32px" alt="Linkedin Mark"><span class="linktext">Linkedin</span></a> 
+        </div>
         <h2 class="blue-style" id="skills">Soft Skills:</h2>
             <p>Adaptability</p>
             <p>Communication</p>

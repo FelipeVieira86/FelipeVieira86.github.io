@@ -1,0 +1,70 @@
+                * {
+                    color : #026670;
+                    font-family: 'kotori_roseregular';
+                  }
+                  p:nth-child(even) {
+                      font-weight: bold;
+                      font-size: 1.1em;
+                  }
+                .clear {
+                    clear: both;
+                }
+                body {
+                    font-size : 18px;
+                    background-color: #EDEAE5;
+                    text-align : center;
+                    }
+                #photo {
+                    border-radius: 50%;
+                    float: left;
+                    margin: 60px;
+                    margin-right: 0px;
+                    margin-left: 29%;
+                    padding: 10px;
+                    background-color: #026670;
+                }
+                #nome {
+                    font-size: 2.5em;
+                }
+                #info {
+                    float:right;
+                    padding: 40px;
+                    padding-left: 0px;
+                    margin: 75px;
+                    margin-left: 0px;
+                    margin-right: 29%;
+                    margin-top: 140px;
+                }
+                .info{
+                    font-size: 0.9em;
+                    font-weight: 500;
+                }
+                .links {
+                    text-decoration: underline;
+                    font-weight: 500;
+                    font-size: 0.9em;
+                }
+                .linkedin {
+                    border-radius: 50%;
+                }
+                p {
+                    margin-block-end: 0.2em;
+                    margin-block-start: 0.2em;
+                }
+                .buttons-bot{
+                    background-color: #EDEAE5;
+                    padding: 10px 20px;
+                    border: 2px solid;
+                    border-radius: 20%;
+                    color: #026670;
+                    border-color: #021946; 
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+                .blue-style {
+                    color: #021946;
+                }
+                .linktext{
+                    position: relative;
+                    bottom: 10px;
+                }
