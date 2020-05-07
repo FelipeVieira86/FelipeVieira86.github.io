@@ -1,11 +1,3 @@
-<style>
-    @font-face {
-        font-family: 'kotori_roseregular';
-        src: url('/Fonts/kotorirose-regular-webfont.woff2') format('woff2'),
-        url('/Fonts/kotorirose-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
                 * {
                     color : #026670;
                     font-family: 'kotori_roseregular';
@@ -50,4 +42,3 @@
                 .blue-style {
                     color: #021946;
                 }
-            </style> 
