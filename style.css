@@ -2,16 +2,35 @@
                     color : #026670;
                     font-family: 'kotori_roseregular';
                   }
+                  p:nth-child(even) {
+                      font-weight: bold;
+                      font-size: 1.1em;
+                  }
+                .clear {
+                    clear: both;
+                }
                 body {
                     font-size : 18px;
                     background-color: #EDEAE5;
                     text-align : center;
                     }
                 #photo {
-                    border-radius: 15%;
+                    border-radius: 50%;
+                    float: left;
+                    margin: 60px;
+                    margin-left: 25%;
+                    padding: 10px;
+                    background-color: #026670;
                 }
                 #nome {
                     font-size: 2.5em;
+                }
+                #info {
+                    float:right;
+                    padding: 40px;
+                    margin: 75px;
+                    margin-right: 21%;
+                    margin-top: 140px;
                 }
                 .info{
                     font-size: 0.9em;
@@ -41,4 +60,8 @@
                 }
                 .blue-style {
                     color: #021946;
+                }
+                .linktext{
+                    position: relative;
+                    bottom: 10px;
                 }
