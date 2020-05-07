@@ -18,7 +18,8 @@
                     border-radius: 50%;
                     float: left;
                     margin: 60px;
-                    margin-left: 25%;
+                    margin-right: 0px;
+                    margin-left: 29%;
                     padding: 10px;
                     background-color: #026670;
                 }
@@ -28,8 +29,10 @@
                 #info {
                     float:right;
                     padding: 40px;
+                    padding-left: 0px;
                     margin: 75px;
-                    margin-right: 21%;
+                    margin-left: 0px;
+                    margin-right: 29%;
                     margin-top: 140px;
                 }
                 .info{
