@@ -98,19 +98,19 @@ function changeGridSize() {
 
 gridSize.addEventListener('click', changeGridSize);
 colorVarietyButton.addEventListener('click', setColorNumbers);
-gridSizeInput.addEventListener('keyup', function(tecla) {
+gridSizeInput.addEventListener('keyup', function (tecla) {
   if (tecla.key === 'Enter') {
-    changeGridSize(); 
+    changeGridSize();
   }
-})
-colorVariety.addEventListener('keyup', function(tecla) {
+});
+colorVariety.addEventListener('keyup', function (tecla) {
   if (tecla.key === 'Enter') {
-    setColorNumbers(); 
+    setColorNumbers();
   }
-})
-gridSizeInput.addEventListener('click', function(tecla) {
-    changeGridSize(); 
-})
-colorVariety.addEventListener('click', function(tecla) {
-  setColorNumbers(); 
-})
+});
+gridSizeInput.addEventListener('click', function (tecla) {
+  changeGridSize();
+});
+colorVariety.addEventListener('click', function (tecla) {
+  setColorNumbers();
+});
