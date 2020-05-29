@@ -89,9 +89,11 @@ function changeGridSize() {
   }
   if (n <= 5) {
     n = 5;
+    gridSizeInput.value = 5;
   }
   if (n >= 30) {
     n = 30;
+    gridSizeInput.value = 30;
   }
   setGrid(n);
 }
@@ -107,10 +109,4 @@ colorVariety.addEventListener('keyup', function (tecla) {
   if (tecla.key === 'Enter') {
     setColorNumbers();
   }
-});
-gridSizeInput.addEventListener('change', function (tecla) {
-  changeGridSize();
-});
-colorVariety.addEventListener('change', function (tecla) {
-  setColorNumbers();
 });
