@@ -108,9 +108,9 @@ colorVariety.addEventListener('keyup', function (tecla) {
     setColorNumbers();
   }
 });
-gridSizeInput.addEventListener('click', function (tecla) {
+gridSizeInput.addEventListener('change', function (tecla) {
   changeGridSize();
 });
-colorVariety.addEventListener('click', function (tecla) {
+colorVariety.addEventListener('change', function (tecla) {
   setColorNumbers();
 });
