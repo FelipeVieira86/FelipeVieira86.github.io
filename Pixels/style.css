@@ -57,9 +57,10 @@ button {
   font-family: 'PressStart2P-Regular';
 	font-size:14px;
 	font-weight:bold;
-	padding:12px 16px;
+  padding:12px 16px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px white;
+  text-shadow:0px 1px 0px white;
+  width: 130px;
 }
 button:hover {
 	background-color:rgb(204, 194, 166);

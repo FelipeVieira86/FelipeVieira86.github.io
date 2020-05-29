@@ -90,10 +90,27 @@ function changeGridSize() {
   if (n <= 5) {
     n = 5;
   }
-  if (n >= 50) {
-    n = 50;
+  if (n >= 30) {
+    n = 30;
   }
   setGrid(n);
 }
+
 gridSize.addEventListener('click', changeGridSize);
 colorVarietyButton.addEventListener('click', setColorNumbers);
+gridSizeInput.addEventListener('keyup', function(tecla) {
+  if (tecla.key === 'Enter') {
+    changeGridSize(); 
+  }
+})
+colorVariety.addEventListener('keyup', function(tecla) {
+  if (tecla.key === 'Enter') {
+    setColorNumbers(); 
+  }
+})
+gridSizeInput.addEventListener('click', function(tecla) {
+    changeGridSize(); 
+})
+colorVariety.addEventListener('click', function(tecla) {
+  setColorNumbers(); 
+})
