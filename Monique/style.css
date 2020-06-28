@@ -30,6 +30,7 @@
   .data {
     min-width: 130px;
   }
+  
   .titulo-header {
     color: white;
     text-align: right;
@@ -43,16 +44,20 @@
     margin: 2% auto;
     padding: 2%;
   }
+
   .inputradio {
     margin-left: 1%;
   }
+
   .center {
     display: flex;
     justify-content: center;
   }
+
   h1 {
     margin: auto;
   }
+
   h2,
   h3 {
     box-sizing: border-box;
