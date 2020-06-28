@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha de Anamnese</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo-header">Monique Nobre Nails</h1>
+      <form class="form-inline pesquisa-header">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="pesquisacpf" class="sr-only">CPF</label>
+          <input
+            type="text"
+            class="form-control"
+            id="pesquisacpf"
+            placeholder="CPF"
+          />
+        </div>
+        <button id="pesquisacpfbtn" type="button" class="btn btn-light mb-2">
+          Pesquisar
+        </button>
+      </form>
+    </header>
+    <h2>Ficha de Anamnese</h2>
+    <section id="form" class="forms-div">
+      <h3>DADOS PESSOAIS</h3>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Nome:</label>
+          <input class="form-control" type="text" id="name" name="name" />
+        </div>
+        <div class="form-group col-md-3">
+          <label for="cpf">CPF:</label>
+          <input class="form-control" type="text" id="cpf" name="cpf" />
+        </div>
+        <div class="form-group col-md-3">
+          <label for="nascimento">Nascimento:</label>
+          <input
+            class="form-control data"
+            type="text"
+            id="nascimento"
+            name="nascimento"
+            placeholder="dd/mm/aaaa"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input class="form-control" type="text" id="endereco" name="endereco" />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="bairro">Bairro:</label>
+          <input class="form-control" type="text" id="bairro" name="bairro" />
+        </div>
+        <div class="form-group col-md-3">
+          <label for="cidade">Cidade:</label>
+          <input class="form-control" type="text" id="cidade" name="cidade" />
+        </div>
+        <div class="form-group col-md-3">
+          <label for="cep">CEP:</label>
+          <input class="form-control" type="text" id="cep" name="cep" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="telefone">Telefone:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="telefone"
+            name="telefone"
+          />
+        </div>
+        <div class="form-group col-md-9">
+          <label for="email">Email:</label>
+          <input class="form-control" type="text" id="email" name="email" />
+        </div>
+      </div>
+      <h3>EXAME FÍSICO E INSPEÇÃO DAS UNHAS</h3>
+      <div>
+        <div class="form-group">
+          <span>Gestante?</span>
+          <input
+            class="inputradio"
+            type="radio"
+            id="gestantes"
+            name="gestante"
+            value="sim"
+          />
+          <label for="gestantes">Sim</label>
+          <input
+            class="inputradio"
+            type="radio"
+            id="gestanten"
+            name="gestante"
+            value="não"
+          />
+          <label for="gestanten">Não</label>
+        </div>
+        <div class="form-group">
+          <span>Diabetes?</span>
+          <input
+            class="inputradio"
+            type="radio"
+            id="diabetes"
+            name="diabete"
+            value="sim"
+          />
+          <label for="diabetes">Sim</label>
+          <input
+            class="inputradio"
+            type="radio"
+            id="diabeten"
+            name="diabete"
+            value="não"
+          />
+          <label for="diabeten">Não</label>
+        </div>
+        <div class="form-group">
+          <span>Pratica esportes de impacto?</span>
+          <input class="inputradio" type="radio" id="esportes" name="esporte" />
+          <label for="esportes">Sim</label>
+          <input class="inputradio" type="radio" id="esporten" name="esporte" />
+          <label for="esporten">Não</label>
+        </div>
+        <div class="form-group">
+          <span>Frequenta mar/piscina com frequência?</span>
+          <input class="inputradio" type="radio" id="piscinas" name="piscina" />
+          <label for="piscinas">Sim</label>
+          <input class="inputradio" type="radio" id="piscinan" name="piscina" />
+          <label for="piscinan">Não</label>
+        </div>
+        <div>
+          <span>Faz uso de algum medicamento?</span>
+          <input
+            class="inputradio"
+            type="radio"
+            id="medicamentos"
+            name="medicamento"
+          />
+          <label for="medicamentos">Sim</label>
+          <input
+            class="inputradio"
+            type="radio"
+            id="medicamenton"
+            name="medicamento"
+          />
+          <label for="medicamenton">Não</label>
+          <div class="form-group row">
+            <label class="col-sm-1 col-form-label" for="medqual">Qual?</label>
+            <div class="col-sm-11">
+              <input class="form-control" type="text" id="medqual" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <span>Possui alergia à Esmalte/Cosméticos/Outros?</span>
+          <input class="inputradio" type="radio" id="alergias" name="alergia" />
+          <label for="alergias">Sim</label>
+          <input class="inputradio" type="radio" id="alergian" name="alergia" />
+          <label for="alergian">Não</label>
+          <div class="form-group row">
+            <label class="col-sm-1 col-form-label" for="alergiaqual"
+              >Especifique:</label
+            >
+            <div class="col-sm-11">
+              <input class="form-control" type="text" id="alergiaqual" />
+            </div>
+          </div>
+        </div>
+        <div class="divisao"></div>
+        <div>
+          <span>Onicocriptose (unha encravada)?</span>
+          <input
+            class="inputradio"
+            type="radio"
+            id="encravadas"
+            name="encravada"
+          />
+          <label for="encravadas">Sim</label>
+          <input
+            class="inputradio"
+            type="radio"
+            id="encravadan"
+            name="encravada"
+          />
+          <label for="encravadan">Não</label>
+        </div>
+        <div>
+          <span>Onicofagia (hábito de roer as unhas)?</span>
+          <input class="inputradio" type="radio" id="roers" name="roer" />
+          <label for="roers">Sim</label>
+          <input class="inputradio" type="radio" id="roern" name="roer" />
+          <label for="roern">Não</label>
+        </div>
+        <div>
+          <span>Costuma retirar o eponíqueo (cutícula)?</span>
+          <input
+            class="inputradio"
+            type="radio"
+            id="cuticulas"
+            name="cuticula"
+          />
+          <label for="cuticulas">Sim</label>
+          <input
+            class="inputradio"
+            type="radio"
+            id="cuticulan"
+            name="cuticula"
+          />
+          <label for="cuticulan">Não</label>
+        </div>
+        <div>
+          <span>Onicomicose (micose/fungos/outros)?</span>
+          <input class="inputradio" type="radio" id="fungos" name="fungo" />
+          <label for="fungos">Sim</label>
+          <input class="inputradio" type="radio" id="fungon" name="fungo" />
+          <label for="fungon">Não</label>
+          <div class="form-group row">
+            <label class="col-sm-1 col-form-label" for="fungoqual"
+              >Especifique:</label
+            >
+            <div class="col-sm-11">
+              <input class="form-control" type="text" id="fungoqual" />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span>A lâmina ungueal apresenta:</span>
+          <input class="inputradio" type="checkbox" id="laminadesc" />
+          <label for="laminadesc">Descamação</label>
+          <input class="inputradio" type="checkbox" id="laminaest" />
+          <label for="laminaest">Estrias</label>
+          <input class="inputradio" type="checkbox" id="laminaman" />
+          <label for="laminaman">Manchas</label>
+          <input class="inputradio" type="checkbox" id="laminadescol" />
+          <label for="laminadescol">Descolamento</label>
+          <div class="form-group row">
+            <label class="col-sm-1 col-form-label" for="laminaqual"
+              >Outros:</label
+            >
+            <div class="col-sm-11">
+              <input class="form-control" type="text" id="laminaqual" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>TÉCNICA APLICADA</h3>
+      <div id="tecnicaunha" class="center">
+        <input
+          class="inputradio"
+          type="radio"
+          name="tecnica"
+          id="acrilico"
+          value="Acrílico"
+        />
+        <label for="acrilico">Acrílico</label>
+        <input
+          class="inputradio"
+          type="radio"
+          name="tecnica"
+          id="fibra"
+          value="Fibra de Vidro"
+        />
+        <label for="fibra">Fibra de vidro</label>
+        <input
+          class="inputradio"
+          type="radio"
+          name="tecnica"
+          id="blindagem"
+          value="Blindagem"
+        />
+        <label for="blindagem">Blindagem</label>
+        <input
+          class="inputradio"
+          type="radio"
+          name="tecnica"
+          id="moldado"
+          value="Gel Moldado"
+        />
+        <label for="moldado">Gel moldado</label>
+        <input
+          class="inputradio"
+          type="radio"
+          name="tecnica"
+          id="tip"
+          value="Gel na Tip"
+        />
+        <label for="tip">Gel na tip</label>
+        <input
+          class="inputradio"
+          type="radio"
+          name="tecnica"
+          id="banho"
+          value="Banho nas unhas naturais"
+        />
+        <label for="banho">Banho nas unhas naturais</label>
+      </div>
+      <div class="img estilo">
+        <input class="estilo1" type="radio" name="tipounha" id="quadrada" />
+        <input class="estilo2" type="radio" name="tipounha" id="quadradaoval" />
+        <input class="estilo2" type="radio" name="tipounha" id="oval" />
+        <input class="estilo2" type="radio" name="tipounha" id="arredondada" />
+        <input class="estilo2" type="radio" name="tipounha" id="almond" />
+        <input class="estilo2" type="radio" name="tipounha" id="stilletoc" />
+        <input class="estilo2" type="radio" name="tipounha" id="stilletol" />
+        <input class="estilo2" type="radio" name="tipounha" id="ballerina" />
+      </div>
+      <div>
+        <div class="form-group row">
+          <label for="corunha" class="col-sm-1 col-form-label">Cor:</label>
+          <div class="col-sm-5">
+            <input class="form-control" type="text" id="corunha" />
+          </div>
+          <label for="detalheunha" class="col-sm-1 col-form-label"
+            >Detalhes:</label
+          >
+          <div class="col-sm-5">
+            <input class="form-control" type="text" id="detalheunha" />
+          </div>
+        </div>
+        <div>
+          <span>Tamanho:</span>
+          <input class="inputradio" type="radio" id="tamanhop" name="tamanho" />
+          <label for="tamanhop">P</label>
+          <input class="inputradio" type="radio" id="tamanhom" name="tamanho" />
+          <label for="tamanhom">M</label>
+          <input class="inputradio" type="radio" id="tamanhog" name="tamanho" />
+          <label for="tamanhog">G</label>
+        </div>
+      </div>
+      <div>
+        <p>
+          <input type="checkbox" name="verdadeiras" id="verdadeiras" />
+          Declaro que as informações acima são verdadeiras, não cabendo ao
+          profisional quaisquer responsabilidades por informações omitidas nessa
+          avaliação.
+        </p>
+        <p>
+          <input type="checkbox" name="cuidados" id="cuidados" />
+          Comprometo-me a seguir todos os cuidados necessários após o
+          procedimento.
+        </p>
+        <p>
+          <input type="checkbox" name="registro" id="registro" />
+          Autorizo registro fotográfico do trabalho realizado (”antes” e
+          “depois”) para efeitos de documentação e divulgação em books, redes
+          sociais ou qualquer material publicitário. A presente autorização é
+          concedida gratuitamente, sem que nada haja a ser reclamado a título de
+          direitos ou qualquer outro.
+        </p>
+      </div>
+      <div class="form-group row">
+        <label for="data" class="col-sm-1 col-form-label">Data:</label>
+        <div class="col-sm-2">
+          <input
+            class="form-control data"
+            type="text"
+            id="data"
+            placeholder="dd/mm/aaaa"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="manutencao">MANUTENÇÃO</label>
+          </div>
+          <div class="form-group col-md-9">
+            <label>ANOTAÇÕES</label>
+          </div>
+        </div>
+        <div id="anotacoes" class="form-row"></div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <input
+              id="manutencao"
+              class="form-control data"
+              type="text"
+              placeholder="dd/mm/aaaa"
+            />
+          </div>
+          <div class="form-group col-md-9">
+            <input id="anotacao" class="form-control" type="text" />
+          </div>
+        </div>
+        <button id="addtarefa" type="button" class="btn btn-sm btn-primary">Adicionar</button>
+        <button id="save" type="button" class="btn btn-sm btn-success">
+          Salvar
+        </button>
+        <button id="update" type="button" class="btn btn-sm btn-warning">
+          Atualizar
+        </button>
+        <button id="clear" type="button" class="btn btn-sm btn-danger">
+          Limpar
+        </button>
+        <span id="infobtn"></span>
+        <h3>CUIDADOS</h3>
+        <ul>
+          <li>
+            Não use acetona nas unhas, apenas removedor de esmalte ou óleo de
+            banana.
+          </li>
+          <li>
+            Não coloque a unha na boca, a saliva facilita o descolamento e pode
+            trazer bactérias e outros agentes infecciosos.
+          </li>
+          <li>
+            Evite atritos. Nunca utilize as unhas para abrir lata ou qualquer
+            outro objeto.
+          </li>
+          <li>
+            Não aperte botões e nenhuma superfície com as unhas. Use a ponta dos
+            dedos.
+          </li>
+          <li>
+            Sempre mantenha suas unhas afastadas de qualquer fonte de fogo e
+            calor.
+          </li>
+          <li>Não deixe as unhas submersas em água por muito tempo.</li>
+          <li>
+            Coloque luvas sempre que manusear produtos químicos – produtos de
+            limpeza, tinturas e alisamentos de cabelo, entre outros.
+          </li>
+          <li>
+            Apenas a especialista deve retirar o alongamento, mesmo que a quebra
+            seja por motivo de descuido. Existe uma forma correta de remoção,
+            para que as unhas naturais não sejam prejudicadas.
+          </li>
+        </ul>
+        <div>
+          <p>
+            Eu, <em class="ciente" id="nomeciente"></em> estou ciente que estou
+            fazendo o procedimento de alongamento de unhas, da técnica
+            <em class="ciente" id="tecnicaciente"></em> que precisará de
+            cuidados e manutenções dentro de 15 a 20 dias.
+          </p>
+          <p>
+            Também estou ciente que, sem esses devidos cuidados e manutenções,
+            minha Nail Designer será isenta de qualquer responsabilidade sobre o
+            alongamento, como possíveis quebras, fungos, entre outros dados, que
+            podem ser causados por negligência a longo prazo.
+          </p>
+          <p>
+            A Nail Designer por sua parte, juntamente com a sua equipe de
+            trabalho, concorda em atender a cliente informada acima, dentro do
+            prazo de manutenção, sendo responsável por agendar o dia do
+            atendimento, de acordo com os horários da agenda e disponibilidade
+            da cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="moment.js"></script>
+    <script src="pikaday.js"></script>
+    <script>
+      var picker = new Pikaday({
+        field: document.getElementById('manutencao'),
+        firstDay: 1,
+        format: 'DD/MM/YYYY',
+        minDate: new Date(),
+        maxDate: new Date(2020, 12, 31),
+        yearRange: [2000, 2020],
+      });
+      var picker2 = new Pikaday({
+        field: document.getElementById('data'),
+        firstDay: 1,
+        format: 'DD/MM/YYYY',
+        minDate: new Date(),
+        maxDate: new Date(2020, 12, 31),
+        yearRange: [2000, 2020],
+      });
+      var picker = new Pikaday({
+        field: document.getElementById('nascimento'),
+        firstDay: 1,
+        format: 'DD/MM/YYYY',
+        maxDate: new Date(2020, 12, 31),
+        yearRange: [1900, 2020],
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: rgb(252, 199, 192);
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgb(252, 177, 167);
+  border-bottom: 1px solid rgb(251, 155, 143);
+  padding: 1%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+}
+
+.divisao {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2%;
+}
+.inline {
+  display: inline;
+}
+
+.data {
+  min-width: 130px;
+}
+.titulo-header {
+  color: white;
+  text-align: right;
+  margin-right: 5%;
+  text-shadow: 2px 2px 3px rgb(201, 105, 103);
+}
+
+.forms-div {
+  background-color: white;
+  width: 90%;
+  margin: 2% auto;
+  padding: 2%;
+}
+.inputradio {
+  margin-left: 1%;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+}
+img {
+  width: 100%;
+}
+h1 {
+  margin: auto;
+}
+h2,
+h3 {
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  width: 100%;
+  text-shadow: 2px 2px 3px rgb(201, 105, 103);
+}
+
+h3 {
+  margin: 1% auto;
+  padding: 1%;
+  background-color: rgb(251, 217, 192);
+}
+
+h2 {
+  margin: auto;
+  margin-top: 8%;
+}
+
+.ciente {
+  font-weight: 700;
+}
+.img {
+  background-image: url(img/tipodeunhas.jpg);
+  height: 210px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.estilo1 {
+  margin-left: 3%;
+}
+
+.estilo2 {
+  margin-left: 11%;
+}
