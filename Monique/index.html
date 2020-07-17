@@ -382,7 +382,6 @@
         field: document.getElementById('manutencao'),
         firstDay: 1,
         format: 'DD/MM/YYYY',
-        minDate: new Date(),
         maxDate: new Date(2020, 12, 31),
         yearRange: [2000, 2020],
       });
@@ -390,16 +389,8 @@
         field: document.getElementById('data'),
         firstDay: 1,
         format: 'DD/MM/YYYY',
-        minDate: new Date(),
         maxDate: new Date(2020, 12, 31),
         yearRange: [2000, 2020],
-      });
-      var picker = new Pikaday({
-        field: document.getElementById('nascimento'),
-        firstDay: 1,
-        format: 'DD/MM/YYYY',
-        maxDate: new Date(2020, 12, 31),
-        yearRange: [1900, 2020],
       });
     </script>
     <script src="script.js"></script>

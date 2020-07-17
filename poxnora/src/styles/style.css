@@ -1,0 +1,108 @@
+body, input {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  width: 45%;
+  height: 30%;
+  margin: 3px;
+}
+
+.rune-count, .rune-navigation {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  font-weight: 700;
+  align-items: center;
+}
+
+.rune-count {
+  border-bottom: 1px solid white;
+  margin-bottom: 3px;
+  justify-content: space-between;
+}
+
+.rune-count#filter-area {
+  justify-content: center;
+}
+
+.rune-navigation {
+  justify-content: space-around;
+  border-top: 1px solid white;
+  margin-top: 3px;
+}
+
+.rune-list-container {
+  border: white 1px solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: fit-content;
+  margin-bottom: 6px;
+  padding-bottom: 1%;
+  width: 100%;
+}
+
+.rune-list {
+  margin: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rune-name-container {
+  width: 33%;
+  min-width: 170px;
+}
+
+/* Por favor, manter */
+
+.hidden {
+  display: none;
+}
+
+/* style para lista de nomes das runas */
+p.champion,
+p.spell,
+p.equip,
+p.relic {
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+p.champion:hover,
+p.spell:hover,
+p.equip:hover,
+p.relic:hover {
+  color: lightskyblue;
+  text-decoration: underline;
+}
+
+.list-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rune-preview {
+  position: relative;
+  left: 14px;
+}
+
+.footer {
+  margin: 5px auto 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 310px;
+}
+
+a {
+  color: #9fbe52;
+}
